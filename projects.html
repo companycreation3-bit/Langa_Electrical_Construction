@@ -1,0 +1,2393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore the project capabilities of Langa Engineering & Construction Limited across electrical engineering, construction, solar and hybrid power, HV/LV systems, generators and communications in Papua New Guinea.">
+
+    <title>Projects | Langa Engineering & Construction Limited</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1d2d3a;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        :root {
+            --navy: #0a3d62;
+            --dark-navy: #062b45;
+            --gold: #f4a300;
+            --light: #f4f7f9;
+            --white: #ffffff;
+            --gray: #647481;
+            --border: #e1e8ed;
+        }
+
+
+        /* =================================
+           TOP BAR
+        ================================= */
+
+        .top-bar {
+            background: var(--dark-navy);
+            color: #ffffff;
+
+            padding: 9px 5%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 13px;
+
+            gap: 20px;
+        }
+
+        .top-left,
+        .top-right {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        /* =================================
+           HEADER
+        ================================= */
+
+        header {
+            background: #ffffff;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 3px 18px rgba(0,0,0,0.08);
+        }
+
+        .navbar {
+            min-height: 82px;
+
+            padding: 0 5%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 25px;
+        }
+
+        .brand {
+            display: flex;
+
+            align-items: center;
+
+            text-decoration: none;
+
+            color: var(--navy);
+
+            min-width: 260px;
+        }
+
+        .logo {
+            width: 58px;
+            height: 58px;
+
+            border-radius: 50%;
+
+            background: var(--navy);
+
+            color: var(--gold);
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 15px;
+
+            font-weight: 900;
+
+            border: 3px solid var(--gold);
+
+            margin-right: 12px;
+
+            letter-spacing: 1px;
+        }
+
+        .brand-text {
+            line-height: 1.15;
+        }
+
+        .brand-text strong {
+            display: block;
+
+            font-size: 18px;
+
+            font-weight: 900;
+
+            letter-spacing: 0.5px;
+        }
+
+        .brand-text span {
+            font-size: 11px;
+
+            color: var(--gray);
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        /* =================================
+           NAVIGATION
+        ================================= */
+
+        .nav-links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 5px;
+
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+
+            color: var(--navy);
+
+            font-weight: 700;
+
+            font-size: 14px;
+
+            padding: 12px 15px;
+
+            border-radius: 5px;
+
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: var(--navy);
+
+            color: #ffffff;
+        }
+
+        .nav-links a.contact-link {
+            background: var(--gold);
+
+            color: #172b3a;
+
+            margin-left: 7px;
+        }
+
+        .nav-links a.contact-link:hover {
+            background: #d99000;
+
+            color: #ffffff;
+        }
+
+        .menu-toggle {
+            display: none;
+
+            border: none;
+
+            background: var(--navy);
+
+            color: #ffffff;
+
+            width: 45px;
+            height: 42px;
+
+            border-radius: 5px;
+
+            font-size: 24px;
+
+            cursor: pointer;
+        }
+
+
+        /* =================================
+           HERO
+        ================================= */
+
+        .page-hero {
+            min-height: 470px;
+
+            background:
+                linear-gradient(
+                    rgba(6,43,69,0.90),
+                    rgba(10,61,98,0.82)
+                ),
+                url("images/project-bg.jpg")
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .page-hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 380px;
+            height: 380px;
+
+            border: 50px solid
+                rgba(244,163,0,0.10);
+
+            border-radius: 50%;
+
+            right: -130px;
+            bottom: -160px;
+        }
+
+        .hero-content {
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            color: #ffffff;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        .hero-label {
+            color: var(--gold);
+
+            font-weight: 900;
+
+            font-size: 14px;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 15px;
+
+            text-transform: uppercase;
+        }
+
+        .hero-content h1 {
+            font-size:
+                clamp(42px, 6vw, 72px);
+
+            line-height: 1.05;
+
+            max-width: 900px;
+
+            margin-bottom: 25px;
+        }
+
+        .hero-content h1 span {
+            color: var(--gold);
+        }
+
+        .hero-content p {
+            max-width: 780px;
+
+            font-size: 18px;
+
+            color: #e8f1f6;
+        }
+
+
+        /* =================================
+           GENERAL SECTION
+        ================================= */
+
+        .section {
+            padding: 90px 5%;
+        }
+
+        .section-heading {
+            text-align: center;
+
+            max-width: 800px;
+
+            margin: 0 auto 55px;
+        }
+
+        .section-heading .eyebrow {
+            color: var(--gold);
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+
+            font-size:
+                clamp(30px, 4vw, 45px);
+
+            margin-bottom: 15px;
+        }
+
+        .section-heading p {
+            color: var(--gray);
+
+            font-size: 16px;
+        }
+
+
+        /* =================================
+           PROJECT INTRO
+        ================================= */
+
+        .project-intro {
+            max-width: 1150px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+        .project-intro-image {
+            min-height: 390px;
+
+            border-radius: 8px;
+
+            background:
+                linear-gradient(
+                    rgba(10,61,98,0.10),
+                    rgba(10,61,98,0.10)
+                ),
+                url("images/about-engineering.jpg")
+                center/cover no-repeat;
+
+            box-shadow:
+                0 15px 40px
+                rgba(0,0,0,0.12);
+        }
+
+        .project-intro-text h2 {
+            color: var(--navy);
+
+            font-size: 36px;
+
+            line-height: 1.2;
+
+            margin-bottom: 20px;
+        }
+
+        .project-intro-text p {
+            color: var(--gray);
+
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+
+            margin-top: 22px;
+        }
+
+        .check-list li {
+            color: var(--navy);
+
+            font-weight: 700;
+
+            margin-bottom: 11px;
+        }
+
+        .check-list li::before {
+            content: "✓";
+
+            color: var(--gold);
+
+            font-weight: 900;
+
+            margin-right: 10px;
+        }
+
+
+        /* =================================
+           PROJECT CATEGORIES
+        ================================= */
+
+        .projects-section {
+            background: var(--light);
+        }
+
+        .projects-grid {
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #ffffff;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+            transition: 0.3s ease;
+
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 18px 40px
+                rgba(0,0,0,0.10);
+        }
+
+        .project-image {
+            height: 220px;
+
+            position: relative;
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+        .project-image::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(6,43,69,0.70)
+                );
+        }
+
+        .project-tag {
+            position: absolute;
+
+            z-index: 2;
+
+            left: 18px;
+
+            bottom: 17px;
+
+            background: var(--gold);
+
+            color: var(--dark-navy);
+
+            padding: 6px 12px;
+
+            border-radius: 4px;
+
+            font-size: 11px;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+        .project-content {
+            padding: 27px 25px 30px;
+        }
+
+        .project-content h3 {
+            color: var(--navy);
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+        }
+
+        .project-content p {
+            color: var(--gray);
+
+            font-size: 14px;
+
+            margin-bottom: 17px;
+        }
+
+        .project-content ul {
+            list-style: none;
+        }
+
+        .project-content li {
+            color: #526572;
+
+            font-size: 14px;
+
+            margin-bottom: 7px;
+
+            padding-left: 18px;
+
+            position: relative;
+        }
+
+        .project-content li::before {
+            content: "•";
+
+            color: var(--gold);
+
+            font-size: 20px;
+
+            position: absolute;
+
+            left: 0;
+
+            top: -3px;
+        }
+
+
+        /* PROJECT IMAGE TYPES */
+
+        .electrical {
+            background-image:
+                linear-gradient(
+                    rgba(10,61,98,0.15),
+                    rgba(10,61,98,0.15)
+                ),
+                url("images/electrical-project.jpg");
+        }
+
+        .solar {
+            background-image:
+                linear-gradient(
+                    rgba(10,61,98,0.15),
+                    rgba(10,61,98,0.15)
+                ),
+                url("images/solar-project.jpg");
+        }
+
+        .construction {
+            background-image:
+                linear-gradient(
+                    rgba(10,61,98,0.15),
+                    rgba(10,61,98,0.15)
+                ),
+                url("images/construction-project.jpg");
+        }
+
+        .generator {
+            background-image:
+                linear-gradient(
+                    rgba(10,61,98,0.15),
+                    rgba(10,61,98,0.15)
+                ),
+                url("images/generator-project.jpg");
+        }
+
+        .hv-lv {
+            background-image:
+                linear-gradient(
+                    rgba(10,61,98,0.15),
+                    rgba(10,61,98,0.15)
+                ),
+                url("images/hv-lv-project.jpg");
+        }
+
+        .communication {
+            background-image:
+                linear-gradient(
+                    rgba(10,61,98,0.15),
+                    rgba(10,61,98,0.15)
+                ),
+                url("images/communication-project.jpg");
+        }
+
+
+        /* =================================
+           PROJECT DELIVERY
+        ================================= */
+
+        .delivery {
+            background: var(--navy);
+
+            color: #ffffff;
+        }
+
+        .delivery .section-heading h2 {
+            color: #ffffff;
+        }
+
+        .delivery .section-heading p {
+            color: #d7e4eb;
+        }
+
+        .delivery-grid {
+            max-width: 1150px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .delivery-box {
+            text-align: center;
+
+            padding: 30px 20px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.14);
+
+            background:
+                rgba(255,255,255,0.05);
+
+            border-radius: 7px;
+        }
+
+        .delivery-number {
+            width: 62px;
+            height: 62px;
+
+            border-radius: 50%;
+
+            background: var(--gold);
+
+            color: var(--dark-navy);
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-weight: 900;
+
+            font-size: 20px;
+
+            margin: 0 auto 18px;
+        }
+
+        .delivery-box h3 {
+            color: #ffffff;
+
+            font-size: 18px;
+
+            margin-bottom: 8px;
+        }
+
+        .delivery-box p {
+            color: #cbd9e0;
+
+            font-size: 13px;
+        }
+
+
+        /* =================================
+           SECTORS
+        ================================= */
+
+        .sector-grid {
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 15px;
+        }
+
+        .sector {
+            background: #ffffff;
+
+            border: 1px solid var(--border);
+
+            border-radius: 6px;
+
+            padding: 25px 15px;
+
+            text-align: center;
+
+            color: var(--navy);
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .sector:hover {
+            background: var(--gold);
+
+            color: var(--dark-navy);
+
+            transform: translateY(-4px);
+        }
+
+
+        /* =================================
+           PROJECT STANDARDS
+        ================================= */
+
+        .standards-section {
+            background: var(--light);
+        }
+
+        .standards-grid {
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .standard {
+            background: #ffffff;
+
+            border-top:
+                4px solid var(--gold);
+
+            padding: 30px 25px;
+
+            border-radius: 6px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.04);
+        }
+
+        .standard h3 {
+            color: var(--navy);
+
+            margin-bottom: 10px;
+        }
+
+        .standard p {
+            color: var(--gray);
+
+            font-size: 14px;
+        }
+
+
+        /* =================================
+           CTA
+        ================================= */
+
+        .cta {
+            min-height: 370px;
+
+            background:
+                linear-gradient(
+                    rgba(6,43,69,0.91),
+                    rgba(6,43,69,0.91)
+                ),
+                url("images/project-bg.jpg")
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            text-align: center;
+
+            color: #ffffff;
+
+            padding: 70px 5%;
+        }
+
+        .cta-content {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .cta h2 {
+            font-size:
+                clamp(30px,4vw,48px);
+
+            margin-bottom: 18px;
+        }
+
+        .cta p {
+            color: #dce7ed;
+
+            margin-bottom: 30px;
+
+            font-size: 17px;
+        }
+
+        .cta-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 14px 27px;
+
+            text-decoration: none;
+
+            font-weight: 800;
+
+            border-radius: 5px;
+
+            transition: 0.3s;
+        }
+
+        .btn-gold {
+            background: var(--gold);
+
+            color: var(--dark-navy);
+        }
+
+        .btn-gold:hover {
+            background: #ffffff;
+        }
+
+        .btn-outline {
+            border: 2px solid #ffffff;
+
+            color: #ffffff;
+        }
+
+        .btn-outline:hover {
+            background: #ffffff;
+
+            color: var(--navy);
+        }
+
+
+        /* =================================
+           FOOTER
+        ================================= */
+
+        footer {
+            background: #041f31;
+
+            color: #ffffff;
+
+            padding: 55px 5% 20px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr 1fr;
+
+            gap: 45px;
+        }
+
+        .footer-brand h3 {
+            color: var(--gold);
+
+            margin-bottom: 15px;
+
+            font-size: 21px;
+        }
+
+        .footer-brand p {
+            color: #b9cbd5;
+
+            font-size: 14px;
+        }
+
+        footer h4 {
+            color: #ffffff;
+
+            margin-bottom: 18px;
+
+            font-size: 16px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 9px;
+        }
+
+        footer a {
+            color: #b9cbd5;
+
+            text-decoration: none;
+
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+
+            margin: 40px auto 0;
+
+            padding-top: 20px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            text-align: center;
+
+            color: #8ea5b2;
+
+            font-size: 13px;
+        }
+
+
+        /* =================================
+           RESPONSIVE
+        ================================= */
+
+        @media (max-width: 950px) {
+
+            .nav-links {
+                position: absolute;
+
+                top: 82px;
+
+                left: 0;
+                right: 0;
+
+                background: #ffffff;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                padding: 15px 5%;
+
+                display: none;
+
+                box-shadow:
+                    0 15px 25px
+                    rgba(0,0,0,0.10);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                display: block;
+
+                width: 100%;
+            }
+
+            .nav-links a.contact-link {
+                margin-left: 0;
+
+                margin-top: 5px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .project-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .delivery-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .sector-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .standards-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .navbar {
+                min-height: 72px;
+
+                padding: 0 5%;
+            }
+
+            .nav-links {
+                top: 72px;
+            }
+
+            .brand-text strong {
+                font-size: 15px;
+            }
+
+            .brand-text span {
+                font-size: 9px;
+            }
+
+            .logo {
+                width: 48px;
+                height: 48px;
+
+                font-size: 12px;
+            }
+
+            .page-hero {
+                min-height: 420px;
+            }
+
+            .hero-content h1 {
+                font-size: 43px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 65px 5%;
+            }
+
+            .project-intro-image {
+                min-height: 300px;
+            }
+
+            .project-intro-text h2 {
+                font-size: 29px;
+            }
+
+            .projects-grid,
+            .delivery-grid,
+            .sector-grid,
+            .standards-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta {
+                min-height: 410px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     TOP BAR
+================================= -->
+
+<div class="top-bar">
+
+    <div class="top-left">
+
+        <span>
+            📍 Papua New Guinea
+        </span>
+
+        <span>
+            ⚡ Engineering &amp; Construction
+        </span>
+
+    </div>
+
+
+    <div class="top-right">
+
+        <span>
+            Professional Services
+        </span>
+
+        <span>
+            Quality • Safety • Integrity
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header>
+
+    <nav class="navbar">
+
+
+        <a href="index.html"
+           class="brand">
+
+            <div class="logo">
+                LECL
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    LANGA ENGINEERING
+                </strong>
+
+                <span>
+                    &amp; CONSTRUCTION LIMITED
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle">
+
+            ☰
+
+        </button>
+
+
+        <ul
+            class="nav-links"
+            id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html"
+                   class="active">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="why-us.html">
+                    Why Us
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                   class="contact-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =================================
+     HERO
+================================= -->
+
+<section class="page-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            Our Projects
+        </div>
+
+        <h1>
+
+            Delivering projects
+            <span>with purpose.</span>
+
+        </h1>
+
+        <p>
+
+            Langa Engineering &amp; Construction Limited
+            provides engineering and construction capabilities
+            across electrical systems, power infrastructure,
+            renewable energy, construction and communications
+            throughout Papua New Guinea.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     INTRODUCTION
+================================= -->
+
+<section class="section">
+
+    <div class="project-intro">
+
+
+        <div class="project-intro-image">
+        </div>
+
+
+        <div class="project-intro-text">
+
+            <div class="hero-label"
+                 style="color:#f4a300;">
+
+                Project Capability
+
+            </div>
+
+
+            <h2>
+
+                Practical project delivery
+                from concept to completion.
+
+            </h2>
+
+
+            <p>
+
+                Our project capabilities cover a range of
+                engineering and construction requirements.
+                We work to understand the client's needs and
+                deliver practical solutions suited to the
+                project environment.
+
+            </p>
+
+
+            <p>
+
+                Our technical personnel and management team
+                support project planning, implementation,
+                commissioning and ongoing maintenance.
+
+            </p>
+
+
+            <ul class="check-list">
+
+                <li>
+                    Electrical Engineering Projects
+                </li>
+
+                <li>
+                    Solar &amp; Hybrid Power Projects
+                </li>
+
+                <li>
+                    Generator &amp; Backup Power Projects
+                </li>
+
+                <li>
+                    HV &amp; LV Infrastructure
+                </li>
+
+                <li>
+                    Building &amp; Construction Works
+                </li>
+
+                <li>
+                    Communication &amp; Connectivity Projects
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     PROJECT CATEGORIES
+================================= -->
+
+<section class="section projects-section">
+
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Our Capabilities
+        </div>
+
+        <h2>
+            Project Areas
+        </h2>
+
+        <p>
+
+            Our capabilities allow us to support projects
+            across several engineering, infrastructure and
+            construction disciplines.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="projects-grid">
+
+
+        <!-- ELECTRICAL -->
+
+        <div class="project-card">
+
+            <div class="project-image electrical">
+
+                <div class="project-tag">
+                    Electrical
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Electrical Engineering
+                </h3>
+
+                <p>
+
+                    Electrical engineering and installation
+                    solutions for buildings, facilities and
+                    power-related projects.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        Building electrical wiring
+                    </li>
+
+                    <li>
+                        Electrical installations
+                    </li>
+
+                    <li>
+                        Power systems
+                    </li>
+
+                    <li>
+                        Testing and commissioning
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SOLAR -->
+
+        <div class="project-card">
+
+            <div class="project-image solar">
+
+                <div class="project-tag">
+                    Renewable Energy
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Solar &amp; Hybrid Power
+                </h3>
+
+                <p>
+
+                    Renewable and hybrid energy solutions
+                    designed to provide reliable power for
+                    suitable project environments.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        Solar installations
+                    </li>
+
+                    <li>
+                        Standalone systems
+                    </li>
+
+                    <li>
+                        Grid-tie systems
+                    </li>
+
+                    <li>
+                        Hybrid power solutions
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CONSTRUCTION -->
+
+        <div class="project-card">
+
+            <div class="project-image construction">
+
+                <div class="project-tag">
+                    Construction
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Construction Projects
+                </h3>
+
+                <p>
+
+                    Building, infrastructure and general
+                    construction works supporting client
+                    requirements.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        Building construction
+                    </li>
+
+                    <li>
+                        Infrastructure works
+                    </li>
+
+                    <li>
+                        Road works
+                    </li>
+
+                    <li>
+                        General maintenance
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- GENERATOR -->
+
+        <div class="project-card">
+
+            <div class="project-image generator">
+
+                <div class="project-tag">
+                    Power
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Generator Projects
+                </h3>
+
+                <p>
+
+                    Generator solutions supporting
+                    dependable backup and primary power
+                    requirements.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        Generator sizing
+                    </li>
+
+                    <li>
+                        Generator installation
+                    </li>
+
+                    <li>
+                        Servicing
+                    </li>
+
+                    <li>
+                        Preventive maintenance
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HV LV -->
+
+        <div class="project-card">
+
+            <div class="project-image hv-lv">
+
+                <div class="project-tag">
+                    Power Infrastructure
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    HV &amp; LV Projects
+                </h3>
+
+                <p>
+
+                    Electrical infrastructure projects
+                    involving high-voltage and low-voltage
+                    systems.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        HV systems
+                    </li>
+
+                    <li>
+                        LV systems
+                    </li>
+
+                    <li>
+                        Power lines
+                    </li>
+
+                    <li>
+                        Transformers
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COMMUNICATION -->
+
+        <div class="project-card">
+
+            <div class="project-image communication">
+
+                <div class="project-tag">
+                    Communications
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Communication Projects
+                </h3>
+
+                <p>
+
+                    Connectivity and communication solutions
+                    supporting organisations and project
+                    locations.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        Internet systems
+                    </li>
+
+                    <li>
+                        Wi-Fi solutions
+                    </li>
+
+                    <li>
+                        Communication systems
+                    </li>
+
+                    <li>
+                        Kacific deployment
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     PROJECT DELIVERY
+================================= -->
+
+<section class="section delivery">
+
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Project Delivery
+        </div>
+
+        <h2>
+            Our Project Approach
+        </h2>
+
+        <p>
+
+            We aim to maintain a clear and practical approach
+            throughout the project life cycle.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="delivery-grid">
+
+
+        <div class="delivery-box">
+
+            <div class="delivery-number">
+                01
+            </div>
+
+            <h3>
+                Assess
+            </h3>
+
+            <p>
+
+                Understand project requirements,
+                site conditions and objectives.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="delivery-box">
+
+            <div class="delivery-number">
+                02
+            </div>
+
+            <h3>
+                Plan
+            </h3>
+
+            <p>
+
+                Develop appropriate technical,
+                engineering and project solutions.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="delivery-box">
+
+            <div class="delivery-number">
+                03
+            </div>
+
+            <h3>
+                Execute
+            </h3>
+
+            <p>
+
+                Implement the project using
+                appropriate practices and resources.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="delivery-box">
+
+            <div class="delivery-number">
+                04
+            </div>
+
+            <h3>
+                Complete
+            </h3>
+
+            <p>
+
+                Commission, hand over and provide
+                maintenance support where required.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     CLIENT SECTORS
+================================= -->
+
+<section class="section">
+
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Client Sectors
+        </div>
+
+        <h2>
+            Projects Across PNG
+        </h2>
+
+        <p>
+
+            Our capabilities can support a broad range
+            of organisations and project environments.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="sector-grid">
+
+        <div class="sector">
+            Government Agencies
+        </div>
+
+        <div class="sector">
+            District Development Authorities
+        </div>
+
+        <div class="sector">
+            Provincial Governments
+        </div>
+
+        <div class="sector">
+            Business Houses
+        </div>
+
+        <div class="sector">
+            NGOs
+        </div>
+
+        <div class="sector">
+            Development Funding Agencies
+        </div>
+
+        <div class="sector">
+            Schools
+        </div>
+
+        <div class="sector">
+            Hospitals
+        </div>
+
+        <div class="sector">
+            Rural Clinics
+        </div>
+
+        <div class="sector">
+            Infrastructure Projects
+        </div>
+
+        <div class="sector">
+            Community Projects
+        </div>
+
+        <div class="sector">
+            Commercial Projects
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     PROJECT STANDARDS
+================================= -->
+
+<section class="section standards-section">
+
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            Our Commitment
+        </div>
+
+        <h2>
+            How We Approach Projects
+        </h2>
+
+        <p>
+
+            We place importance on quality, safety,
+            accountability and client requirements
+            throughout project delivery.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="standards-grid">
+
+
+        <div class="standard">
+
+            <h3>
+                Quality
+            </h3>
+
+            <p>
+
+                We aim to deliver quality engineering and
+                construction services that meet project
+                requirements and expectations.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="standard">
+
+            <h3>
+                Safety
+            </h3>
+
+            <p>
+
+                Health and safety are considered essential
+                throughout project activities, with a focus
+                on preventing accidents and achieving
+                Zero Harm.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="standard">
+
+            <h3>
+                Accountability
+            </h3>
+
+            <p>
+
+                We maintain responsibility for our work and
+                aim to communicate clearly with clients and
+                project stakeholders.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="standard">
+
+            <h3>
+                Teamwork
+            </h3>
+
+            <p>
+
+                Our project teams combine engineering,
+                technical, supervisory and construction
+                capabilities.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="standard">
+
+            <h3>
+                Innovation
+            </h3>
+
+            <p>
+
+                We look for practical and appropriate
+                solutions that can create value throughout
+                the project life cycle.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="standard">
+
+            <h3>
+                Client Focus
+            </h3>
+
+            <p>
+
+                We work to understand our clients' needs
+                and deliver services aligned with their
+                requirements.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     CTA
+================================= -->
+
+<section class="cta">
+
+
+    <div class="cta-content">
+
+        <h2>
+            Planning Your Next Project?
+        </h2>
+
+        <p>
+
+            Talk to Langa Engineering &amp; Construction
+            Limited about your engineering, electrical,
+            construction, power or communication
+            requirements.
+
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <a href="contact.html"
+               class="btn btn-gold">
+
+                Discuss Your Project
+
+            </a>
+
+
+            <a href="services.html"
+               class="btn btn-outline">
+
+                View Our Services
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer>
+
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                LANGA ENGINEERING
+                &amp; CONSTRUCTION LIMITED
+            </h3>
+
+            <p>
+
+                Professional engineering and construction
+                solutions across Papua New Guinea.
+
+            </p>
+
+            <p style="margin-top:15px;">
+
+                <strong style="color:#f4a300;">
+
+                    We Build It to Last.
+
+                </strong>
+
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Company
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Services
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="services.html">
+                        Electrical Engineering
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Solar &amp; Hybrid
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Generator Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Construction
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="why-us.html">
+                        Why Choose Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Company Profile
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        &copy;
+
+        <span id="year"></span>
+
+        Langa Engineering &amp; Construction Limited.
+
+        All Rights Reserved.
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =================================
+     JAVASCRIPT
+================================= -->
+
+<script>
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    menuToggle.addEventListener(
+        "click",
+        function () {
+
+            navLinks.classList.toggle("show");
+
+
+            if (
+                navLinks.classList.contains("show")
+            ) {
+
+                menuToggle.innerHTML = "✕";
+
+            } else {
+
+                menuToggle.innerHTML = "☰";
+
+            }
+
+        }
+    );
+
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    navLinks.classList.remove("show");
+
+                    menuToggle.innerHTML = "☰";
+
+                }
+            );
+
+        });
+
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
